@@ -1,0 +1,23 @@
+{
+  "name": "Plan_Your_Future",
+  "version": "1.0.0",
+  "description": "A 3D animated investment calculator with SIP, Lump Sum, and SWP functionalities.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=8080",
+    "build": "echo 'No build steps needed for static files'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "keywords": [
+    "investment",
+    "calculator",
+    "SIP",
+    "SWP",
+    "Lump Sum"
+  ],
+  "author": "Rajat Das",
+  "license": "IP.PYF"
+}

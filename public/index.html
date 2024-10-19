@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Calculator</h1>
+        <form id="investment-form">
+            <label for="investment-type">Investment Type:</label>
+            <select id="investment-type" name="investmentType">
+                <option value="sip">SIP</option>
+                <option value="lump-sum">Lump Sum</option>
+            </select>
+
+            <!-- SIP Options -->
+            <div id="sip-options">
+                <label for="sip-amount">SIP Amount (₹):</label>
+                <input type="number" id="sip-amount" name="sipAmount" required>
+                <label for="step-up">Step-Up Amount (₹):</label>
+                <input type="number" id="step-up" name="stepUp" required>
+                <label for="investment-years">Investment Period (years):</label>
+                <input type="number" id="investment-years" name="investmentYears" required>
+            </div>
+
+            <!-- Lump Sum Options -->
+            <div id="lump-sum-options" style="display:none;">
+                <label for="lump-sum-amount">Lump Sum Amount (₹):</label>
+                <input type="number" id="lump-sum-amount" name="lumpSumAmount">
+            </div>
+
+            <label for="inflation-rate">Inflation Rate (%):</label>
+            <input type="number" id="inflation-rate" name="inflationRate" step="0.01" required>
+
+            <label for="swp-years">SWP Withdrawal Period (years):</label>
+            <input type="number" id="swp-years" name="swpYears" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+
+    <!-- Local JavaScript file for form submission and handling -->
+    <script src="app.js"></script>
+</body>
+</html>
